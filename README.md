@@ -17,24 +17,19 @@ The dataset was sourced from Kaggle and was originally scraped from Zepto’s of
 
 Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate product names exist because the same product may appear multiple times in different package sizes, weights, discounts, or categories to improve visibility – exactly how real catalog data looks.
 
-🧾 Columns:
 
-sku_id: Unique identifier for each product entry (Synthetic Primary Key)
+🔧 Project Workflow
+1. Database & Table Creation
+2. Data Import
+3. 🔍 Data Exploration
+4. 🧹 Data Cleaning
+5. 5. 📊 Business Insights
+Found top 10 best-value products based on discount percentage
 
-name: Product name as it appears on the app
-
-category: Product category like Fruits, Snacks, Beverages, etc.
-
-mrp: Maximum Retail Price (originally in paise, converted to ₹)
-
-discountPercent: Discount applied on MRP
-
-discountedSellingPrice: Final price after discount (also converted to ₹)
-
-availableQuantity: Units available in inventory
-
-weightInGms: Product weight in grams
-
-outOfStock: Boolean flag indicating stock availability
-
-quantity: Number of units per package (mixed with grams for loose produce)
+>Identified high-MRP products that are currently out of stock
+>Estimated potential revenue for each product category
+>Filtered expensive products (MRP > ₹500) with minimal discount
+>Ranked top 5 categories offering highest average discounts
+>Calculated price per gram to identify value-for-money products
+>Grouped products based on weight into Low, Medium, and Bulk categories
+>Measured total inventory weight per product category
