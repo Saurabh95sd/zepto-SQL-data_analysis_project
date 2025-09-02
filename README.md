@@ -23,7 +23,7 @@ Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate p
 2. Data Import
 3. 🔍 Data Exploration
 4. 🧹 Data Cleaning
-5. 5. 📊 Business Insights
+5.  📊 Business Insights
 Found top 10 best-value products based on discount percentage
 
 >Identified high-MRP products that are currently out of stock
